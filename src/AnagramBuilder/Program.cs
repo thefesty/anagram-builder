@@ -32,7 +32,7 @@ namespace AnagramBuilder
 
         private static ICollection<string> GetWordlist()
         {
-            return File.ReadAllLines(@"C:\Users\z6awl\Documents\Visual Studio 2013\Projects\anagram-builder\src\wordlist.txt").Distinct().ToList();
+            return File.ReadAllLines(@"wordlist.txt").Distinct().ToList();
         }
 
         private static string FindAnagramWhichMatchesMd5Checksum(IEnumerable<AnagramMatch> anagramMatches, string md5Checksum)
